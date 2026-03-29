@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        
+            <nav id="TopHeader">
+            <a id="Index" href="./index.html">Presentación</a>
+            <a id="Hobies"href="./hobbies.html">Aficiones</a>
+            <a id="Contact" href="./contact.html">Contacto</a>
+            <a id="Game" href="./trivia.html">Juego</a>
+            </nav>
+
+            <link rel="stylesheet" href="./style.css" />
+
+        <title>AA1.1_Práctica</title>
+
+    </head>
+
+<main>
+
+            <form method="post" action="/">
+
+                <fieldset>
+                    <legend>Datos (enviado a mi Buzón Personal)</legend>
+                    <div>
+                        <label for="femail">Correu electrònic:</label>
+                        <input type="email" id="femail" name="email" placeholder="tuemail@gmail.com">
+                        
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Motivos de Contacto</legend>
+                    
+                    <div id="contacto 1">
+                        <label>Objetivo:</label>
+
+                        <input type="radio" id="contactChoice1" name="contact" value="news" />
+                        <label for="contactChoice1">Contratación</label>
+
+                        <input type="radio" id="contactChoice2" name="contact" value="tutorial" />
+                        <label for="contactChoice2">Reclutamiento</label>
+
+                        <input type="radio" id="contactChoice3" name="contact" value="competir" />
+                        <label for="contactChoice3">Donaciones</label>
+                    </div>
+
+                    <div>
+                        <label>Interesado en?:</label>
+                        <select name="urgency">
+                            <option value="baixa">Programador</option>
+                            <option value="mitjana">Diseño de Niveles</option>
+                            <option value="alta">Compañía</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="donacion">Cuánto pagarías por mi juego final? (1€-100€)</label>
+                        <input type="number" id="donacion" name="donacion" min="1" max="100">
+                    </div>
+
+                    <div>
+                        <label>Comentarios addicionales:</label>
+                        <textarea name="comments" rows="3" cols="60" placeholder="Escribe aquí..."></textarea>
+                    </div>
+                </fieldset>
+
+            </form>
+        </main>
+    <footer>
+        <p>
+            Link Git hub
+        </p>
+        <a href="https://github.com/AlejoTHR">
+            <img id="face" src="/AA1.1_HTML/Srcs/cara.png"></img>        
+        </p>
+    </footer>
+</html>
